@@ -6,6 +6,8 @@
 
 ### 🎉 New features
 
+- fallback to title when label is not present in Stack.Toolbar.Menu ([#42531](https://github.com/expo/expo/pull/42531) by [@Ubax](https://github.com/Ubax))
+
 ### 🐛 Bug fixes
 
 ### 💡 Others
