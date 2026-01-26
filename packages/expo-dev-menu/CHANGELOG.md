@@ -8,6 +8,8 @@
 
 ### 🐛 Bug fixes
 
+- [Quest] Fix Floating action button not responding to presses. ([#42563](https://github.com/expo/expo/pull/42563) by [@behenate](https://github.com/behenate))
+
 ### 💡 Others
 
 ## 55.0.2 — 2026-01-26
