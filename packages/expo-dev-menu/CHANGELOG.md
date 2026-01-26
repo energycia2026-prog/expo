@@ -10,7 +10,7 @@
 
 ### 💡 Others
 
-- [ios] Moves connection info lower in the menu. ([#42568](https://github.com/expo/expo/pull/42568) by [@alanjhughes](https://github.com/alanjhughes))
+- Moves connection info lower in the menu. ([#42568](https://github.com/expo/expo/pull/42568) and [#42569](https://github.com/expo/expo/pull/42569) by [@alanjhughes](https://github.com/alanjhughes))
 
 ## 55.0.2 — 2026-01-26
 
