@@ -34,8 +34,6 @@ jobs:
       should_run_ios: ${{ steps.changes.outputs.should_run_ios }}
       should_run_android: ${{ steps.changes.outputs.should_run_android }}
     steps:
-      - name: 👀 Checkout
-        uses: actions/checkout@v5
       - name: 🧐 Detect platform change
         id: changes
         uses: ./.github/actions/detect-platform-change
