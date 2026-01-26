@@ -22,6 +22,7 @@ export async function test(t) {
 
   t.afterAll(async () => {
     for (const contact of contacts) {
+      console.log('hello world');
       await contact.delete();
     }
   });
