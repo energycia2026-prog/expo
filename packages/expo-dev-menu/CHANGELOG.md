@@ -10,6 +10,8 @@
 
 ### 💡 Others
 
+- [ios] Moves connection info lower in the menu.
+
 ## 55.0.2 — 2026-01-26
 
 ### 🎉 New features

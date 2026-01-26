@@ -6,22 +6,12 @@ struct DevMenuMainView: View {
   var body: some View {
     ScrollView {
       VStack(spacing: 32) {
-        VStack {
-          if let hostUrl = viewModel.appInfo?.hostUrl {
-            HostUrl(
-              hostUrl: hostUrl,
-              onCopy: viewModel.copyToClipboard,
-              copiedMessage: viewModel.hostUrlCopiedMessage
-            )
-          }
-
-          DevMenuActions(
-            canNavigateHome: viewModel.canNavigateHome,
-            onReload: viewModel.reload,
-            onGoHome: viewModel.goHome
-          )
-        }
-
+        DevMenuActions(
+          canNavigateHome: viewModel.canNavigateHome,
+          onReload: viewModel.reload,
+          onGoHome: viewModel.goHome
+        )
+        
         if !viewModel.registeredCallbacks.isEmpty {
           CustomItems(
             callbacks: viewModel.registeredCallbacks,
@@ -33,6 +23,14 @@ struct DevMenuMainView: View {
 
         if viewModel.appInfo?.engine == "Hermes" {
           HermesDebuggerTip()
+        }
+
+        if let hostUrl = viewModel.appInfo?.hostUrl {
+          HostUrl(
+            hostUrl: hostUrl,
+            onCopy: viewModel.copyToClipboard,
+            copiedMessage: viewModel.hostUrlCopiedMessage
+          )
         }
 
         DevMenuAppInfo()
